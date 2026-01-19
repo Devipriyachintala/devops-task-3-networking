@@ -1,62 +1,56 @@
 # DevOps Internship – Task 3  
 ## Networking Basics for DevOps (AWS EC2)
 
-This repository demonstrates basic networking diagnostics performed on an **AWS EC2 Ubuntu 22.04 LTS instance** using the Linux Command Line Interface. The task focuses on understanding how systems communicate over networks, including IP addressing, connectivity testing, DNS resolution, open port inspection, and network path tracing.
+This repository contains the implementation of basic networking diagnostics performed on an **AWS EC2 Ubuntu 22.04 LTS instance** using the Linux Command Line Interface. The objective of this task is to understand how systems communicate over a network and how to troubleshoot common connectivity, DNS, and service-related issues in a cloud environment.
 
 ---
 
 ## 🔧 Tools Used
 - AWS EC2 (Ubuntu 22.04 LTS)
-- Linux CLI (EC2 Instance Connect / Browser Terminal)
+- Linux CLI (EC2 Instance Connect – Browser Terminal)
 - GitHub
 
 ---
 
-## 📁 Repository Structure
- 
-
----
-
-## 🧪 Task Overview
-The following networking operations were performed on a cloud-based Linux server:
-
+## 🧪 Task Description
+The following networking concepts were practiced and verified:
 - IP address identification
 - Internet connectivity testing
-- Open port and service inspection
-- DNS resolution and analysis
+- Open ports and services inspection
+- DNS resolution
 - Network path tracing
 - Network failure simulation and recovery
 
 ---
 
-## 🧾 Commands Used
-- `ip a` — Display network interfaces and IP address
-- `ping 8.8.8.8` — Test internet connectivity
-- `ss -tuln` — List open ports and services
-- `nslookup google.com` — Resolve domain name to IP
-- `dig google.com` — View advanced DNS details
-- `traceroute google.com` — Trace network path
-
-(See `COMMANDS.md` for detailed explanations.)
+## 🧾 Commands Overview
+| Command | Description |
+|---------|-------------|
+| `ip a` | Displays network interfaces and assigned IP address |
+| `ping 8.8.8.8` | Tests internet connectivity and latency |
+| `ss -tuln` | Lists open TCP/UDP ports and services |
+| `nslookup google.com` | Resolves domain name to IP address |
+| `dig google.com` | Shows detailed DNS records |
+| `traceroute google.com` | Traces network path to destination |
 
 ---
 
 ## ⚠️ Network Failure Simulation
-Disabling the primary network interface results in loss of connectivity and SSH access to the EC2 instance.  
-Connectivity was restored by stopping and restarting the instance, which reinitialized the network interface.
+Disabling the primary network interface results in loss of internet connectivity and SSH access to the EC2 instance.  
+Connectivity was restored by stopping and restarting the instance from the AWS console, which reinitialized the network interface.
 
 ---
 
 ## 🎯 Final Outcome
-By completing this task, practical understanding was gained in:
+This task helped build practical knowledge of:
 - Cloud-based IP addressing
-- Internet connectivity testing
+- Network connectivity testing
 - DNS troubleshooting
-- Service port inspection
-- Network path analysis
-- Real-world DevOps recovery techniques
+- Port and service monitoring
+- Real-world cloud network recovery
 
 ---
 
 ## 👤 Author
 DevOps Intern – Task 3 Submission
+
